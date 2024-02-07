@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+header {
+    background-color: #D6CEC0;
+    color: #000;
+    padding: 1px;
+    text-align: center;
+}
+
+main {
+    background-color: #D6CEC0;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+.project-container {
+    text-align: center;
+}
+
+.project-box {
+    background-color: #D6C099;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    width: calc(33% - 20px);
+    margin-right: 20px;
+    box-sizing: border-box;
+    vertical-align: top; /* Align project boxes at the top */
+}
+
+.project-box:last-child {
+    margin-right: 0;
+}
+
+.project-box h3 {
+    color: #333;
+}
+
+.project-box p {
+    color: #D6C099;
+    margin-top: 10px;
+}
+
+.rotating-word{
+    color: #AE8781; /* Set the color of the rotating word */
+    font-weight: bold; /* Optionally, make the rotating word bold */
+    display: inline-block;
+    width: 150px;
+}
+
+.underline {
+    width: 50%;
+    margin: 0 auto;
+    border: 0;
+    border-top: 2px solid #333;
+    margin-bottom: 20px;
+    align-self: Center;
+}
+
+footer {
+    background-color: #D6CEC0;
+    color: #000;
+    text-align: center;
+    padding: 2px 0;
+    width: 100%;
+    clear: both;
+}
+
+#intro{
+  text-align: center;
+}
+
+#keyword{
+  color: #AE8781;
+  font-weight: bold;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px; /* Adjust as needed */
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+
+}
+
+.about-image img {
+  max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+  max-height: 500px; /* Set the maximum height of the image */
+  height: auto;
+}
+
+a:visited {
+    color: #AE8781;
+    text-decoration: none;
+}
+
+.project-box {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D6C099;
+    width: 100%; /* Set a fixed width for the dropdown */
+    padding: 12px 0; /* Adjust padding as needed */
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%; /* Position the dropdown below the project box */
+    left: 0; /* Align the dropdown with the left edge of the project box */
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 6px 6px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #333;
+}
+
+.project-box:hover .dropdown-content {
+    display: block;
+}
+
+#senior-design{
+    background-color: #D6C099; /* Background color for the content box */
+    padding: 20px; /* Add padding around the content */
+    border-radius: 5px; /* Add rounded corners to the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.sd-text {
+    flex: 1;
+    padding-right: 20px;
+    padding-left: 20px;/* Adjust as needed */
+}
+
+.sd-image {
+    flex: 1;
+    text-align: center;
+}
+
+.sd-image img {
+  max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+  max-height: 400px; /* Set the maximum height of the image */
+  height: auto;
+}
