@@ -97,7 +97,6 @@ footer {
 .about-text {
     flex: 1;
     padding-right: 20px; /* Adjust as needed */
-    text-align: center;
 }
 
 .about-image {
@@ -126,28 +125,28 @@ a:visited {
     display: none;
     position: absolute;
     background-color: #D6C099;
-    width: 100%; /* Set a fixed width for the dropdown */
-    padding: 12px 0; /* Adjust padding as needed */
+    width: 100%;
+    padding: 12px 0;
     z-index: 1;
     border-radius: 5px;
-    top: 100%; /* Position the dropdown below the project box */
-    left: 0; /* Align the dropdown with the left edge of the project box */
+    top: calc(100% + 10px);
+    left: 0;
 }
 
 .dropdown-content a {
     display: block;
-    padding: 6px 6px; /* Adjust padding as needed */
+    padding: 6px 6px;
     text-decoration: none;
     color: #333;
 }
 
-.project-box:hover .dropdown-content {
+.project-box .dropdown-content.show {
     display: block;
 }
 
 #senior-design{
     background-color: #D6C099; /* Background color for the content box */
-    padding: 20px; /* Add padding around the content */
+    padding: 1px; /* Add padding around the content */
     border-radius: 5px; /* Add rounded corners to the box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -156,7 +155,7 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1px;
 }
 
 .sd-text {
