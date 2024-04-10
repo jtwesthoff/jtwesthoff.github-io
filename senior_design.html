@@ -1,6 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    @media screen and (min-width: 960px) {
+      #main-content {
+        width: 960px;
+      }
+    }
+    @media screen and (max-width: 959px) {
+      #main-content {
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+    }
+    @media screen and (max-width: 599px) {
+      body {
+        font-size: 14px;
+      }
+      #sd {
+        display: flex;
+        flex-direction: column;
+      }
+      #sd .sd-text{
+        order: 1;
+      }
+      #sd .sd-image {
+        order: 2;
+      }
+    }
+  </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senior Design Project</title>
@@ -43,9 +75,30 @@ Electro-Pneumatic Air Shock Optimization System with User Specified Parameters a
               Complementing this functionality, a Raspberry Pi serves as the interface for the driver, providing real-time state updates and pressure readings.</p>
             <p>Given the Raspberry Pi's limitation in reading analog inputs, a JSON file acts as the conduit for seamless data exchange between the two computing platforms.
               This integration ensures efficient communication and enables comprehensive monitoring and control capabilities essential for our system's operation.</p>
+              <p>The system utilizes a high-capacity air compressor to store and supply air, which is then regulated by a series of solenoid valves.
+                These valves are programmed to fill or empty the air shocks as needed, thereby achieving a desired pressure setting. </p>
           </div>
           <div class="sd-image">
             <img src="arduino.jpg" alt="Arduino Image">
+          </div>
+        </section>
+        <section id="sd">
+          <div class="sd-image">
+            <img src="Solenoid and shocks connected.jpg" alt="Solenoids and Shock Image">
+            <img src="Shock connection.jpg" alt="Shock Image">
+          </div>
+          <div class="sd-text">
+            <p>If a change in pressure is detected then the system will automatically fill or release air to maintain the desired pressure.
+              Before making any changes the system performs a check for any spikes in pressure so that no adjustments are made going over certain obstacles to ensure driver safety and vehicle durability. </p>
+            <p>The results from the static suspension travel testing show that the system is more effective at achieving the desired suspension travel than the stock shocks.
+              The system created an overall improvement of 77%, with 65% efficiency in the rear suspension, and 88% in the front.
+              This indicates that the system will allow the vehicle to better handle the obstacles it may face in any off-road terrain.
+	            The dynamic feedback of the system showed better obstacle handling, reduced chassis movement, and adaptability. </p>
+          </div>
+        </section>
+        <section id = "sd" style="text-align: center;">
+          <div class="sd-text">
+            <p>More information about our project can be found on our symposium poster <a href="SEC Poster .pptx.png" target="_blank">here.</a></p>
           </div>
         </section>
     </main>
