@@ -12,7 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var projectButton = document.getElementById("project-button");
     var dropdownContent = projectButton.querySelector('.dropdown-content');
 
-    projectButton.addEventListener('click', () => {
+    // Function to toggle dropdown
+    function toggleDropdown() {
         dropdownContent.classList.toggle('show');
-    });
+    }
+
+    // Add event listeners for both click and touchstart events
+    projectButton.addEventListener('click', toggleDropdown);
+    projectButton.addEventListener('touchstart', toggleDropdown);
 });
