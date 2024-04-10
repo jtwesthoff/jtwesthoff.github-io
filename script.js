@@ -8,4 +8,11 @@ document.addEventListener("DOMContentLoaded", function() {
         roleIndex = (roleIndex + 1) % roles.length;
     }
     setInterval(updateRole, 1000);
+
+    var projectButton = document.getElementById("project-button");
+    var dropdownContent = projectButton.querySelector('.dropdown-content');
+
+    projectButton.addEventListener('click', () => {
+        dropdownContent.classList.toggle('show');
+    });
 });
