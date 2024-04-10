@@ -17,7 +17,19 @@ document.addEventListener("DOMContentLoaded", function() {
         dropdownContent.classList.toggle('show');
     }
 
-    // Add event listeners for both click and touchstart events
+    // Function to close dropdown when a link is clicked
+    function closeDropdown() {
+        dropdownContent.classList.remove('show');
+    }
+
+    // Add event listeners for both click and touchstart events on projectButton
     projectButton.addEventListener('click', toggleDropdown);
     projectButton.addEventListener('touchstart', toggleDropdown);
+
+    // Add event listener to each link inside the dropdown content to close the dropdown
+    var dropdownLinks = dropdownContent.getElementsByTagName('a');
+    for (var i = 0; i < dropdownLinks.length; i++) {
+        dropdownLinks[i].addEventListener('click', closeDropdown);
+        dropdownLinks[i].addEventListener('touchstart', closeDropdown);
+    }
 });
